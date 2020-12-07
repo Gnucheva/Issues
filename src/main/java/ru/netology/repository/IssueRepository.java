@@ -6,7 +6,6 @@ import ru.netology.domain.Issue;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 @NoArgsConstructor
 @AllArgsConstructor
