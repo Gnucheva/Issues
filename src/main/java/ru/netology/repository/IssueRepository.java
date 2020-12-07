@@ -18,12 +18,20 @@ public class IssueRepository {
         return this.items.addAll(items);
     }
 
+    public boolean removeAll(List<Issue> items) {
+        return this.items.removeAll(items);
+    }
+
     public List<Issue> findAll() {
         return items;
     }
 
     public boolean save(Issue item) {
         return items.add(item);
+    }
+
+    public boolean remove(Issue item) {
+        return items.remove(item);
     }
 
     public List<Issue> findOpen() {
