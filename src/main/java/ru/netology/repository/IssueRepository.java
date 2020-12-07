@@ -12,7 +12,7 @@ import java.util.function.Predicate;
 @AllArgsConstructor
 
 public class IssueRepository {
-    private List<Issue> items = new ArrayList<>();
+    private final List<Issue> items = new ArrayList<>();
 
     public boolean addAll(List<Issue> items) {
         return this.items.addAll(items);
