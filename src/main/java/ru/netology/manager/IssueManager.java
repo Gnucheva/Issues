@@ -20,20 +20,12 @@ public class IssueManager {
         repository.save(item);
     }
 
-    public void issueRemove(Issue item) {
-        repository.remove(item);
-    }
-
     public List<Issue> getAll() {
         return repository.findAll();
     }
 
     public boolean addAll(List<Issue> items) {
         return repository.addAll(items);
-    }
-
-    public boolean removeAll(List<Issue> items) {
-        return repository.removeAll(items);
     }
 
     public List<Issue> sortByNewest() {
