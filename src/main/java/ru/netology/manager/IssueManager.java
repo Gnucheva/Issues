@@ -24,7 +24,7 @@ public class IssueManager {
         return repository.findAll();
     }
 
-    public boolean addAll(List<Issue> items) {
+    public boolean addAll(List<? extends Issue> items) {
         return repository.addAll(items);
     }
 
