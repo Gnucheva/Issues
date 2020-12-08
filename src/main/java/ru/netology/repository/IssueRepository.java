@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
-@AllArgsConstructor
+
 
 public class IssueRepository {
     private final List<Issue> items = new ArrayList<>();
