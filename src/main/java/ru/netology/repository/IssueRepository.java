@@ -13,12 +13,8 @@ import java.util.List;
 public class IssueRepository {
     private final List<Issue> items = new ArrayList<>();
 
-    public boolean addAll(List<Issue> items) {
+    public boolean addAll(List<? extends Issue> items) {
         return this.items.addAll(items);
-    }
-
-    public boolean removeAll(List<Issue> items) {
-        return this.items.removeAll(items);
     }
 
     public List<Issue> findAll() {
